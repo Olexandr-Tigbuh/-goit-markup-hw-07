@@ -1,0 +1,28 @@
+.regular-customer-link {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--social-grey-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 16px 32px;
+  transition: color var(--transition);
+  outline: none;
+}
+.regular-customer-icon {
+  fill: currentColor;
+}
+.regular-customer-icon:hover,
+.regular-customer-icon:focus {
+  color: var(--accent-color);
+}
+
+.regular-customer-link:hover,
+.regular-customer-link:focus {
+  color: var(--accent-color);
+}
+
+.regular-customer-item {
+  width: calc(100% / 6 - 30px);
+}

@@ -1,0 +1,95 @@
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header .logo {
+  margin-right: 93px;
+}
+
+.heder-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-list {
+  color: var(--dark-color);
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.contact-item {
+  margin-right: 50px;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition);
+  position: relative;
+}
+
+.header-container-line {
+  position: relative;
+}
+
+.header-link:hover,
+.header-link:focus,
+.current-link {
+  color: var(--accent-color);
+}
+.current-link::after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: var(--active-accent-color);
+  border-radius: 2px;
+  bottom: -1px;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  display: block;
+}
+
+.header-logo {
+  color: var(--text-color);
+}
+
+.contakt-item {
+  margin-left: 30px;
+}
+
+.contact-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.contakt-icon:hover,
+.contakt-icon:focus {
+  color: var(--accent-color);
+}
