@@ -1,5 +1,5 @@
 .projects-item {
-  width: calc(100% / 3 - 30px);
+  --card-item: 3;
 }
 
 .projects-link:hover .projects-item-text,

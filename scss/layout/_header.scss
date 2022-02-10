@@ -1,10 +1,14 @@
 .header {
   border-bottom: 1px solid var(--header-border-color);
 }
-
 .header .logo {
   margin-right: 93px;
 }
+
+.header__logo {
+  color: var(--text-color);
+}
+
 
 .site-nav {
   display: flex;
@@ -65,20 +69,6 @@
   background-color: var(--active-accent-color);
   border-radius: 2px;
   bottom: -1px;
-}
-
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  display: block;
-}
-
-.header__logo {
-  color: var(--text-color);
 }
 
 .contakt__item {

@@ -1,15 +1,17 @@
 //  UTILS
 @import './utils/variables';
-@import './utils/placeholders';
 @import './utils/mixins';
 @import './utils/hidden';
 // BASE
 @import './base/reset';
 @import './base/common';
+@import './base/cardset';
 // COMPONENTS
 @import './components/container';
-@import './components/section-title';
+@import './components/section';
 @import './components/social';
+@import './components/logo';
+@import './components/backdrop';
 // LAYOUT
 @import './layout/header';
 @import './layout/hero';
@@ -20,4 +22,3 @@
 @import './layout/footer';
 @import './layout/portfolio';
 @import './layout/projects';
-@import './layout/backdrop';

@@ -3,7 +3,7 @@
 }
 
 .features-list__item {
-  width: calc(100% / 4 - 30px);
+  --card-item: 4;
 }
 
 .features-group__title {
