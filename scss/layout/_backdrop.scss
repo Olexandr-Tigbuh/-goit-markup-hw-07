@@ -12,11 +12,6 @@
   transform: translate(-50%, -50%) scale(0.5);
 }
 
-.modal-close:hover,
-.modal-close:focus {
-  fill: currentColor;
-}
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -30,6 +25,7 @@
   transition: transform 250ms;
   padding: 40px;
 }
+
 .modal-close {
   width: 30px;
   height: 30px;
@@ -44,6 +40,10 @@
   right: 8px;
   color: var(--accent-color);
   outline: none;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
 }
 
 .is-hidden {
@@ -83,21 +83,18 @@
   outline: none;
   transition: var(--transition);
   cursor: pointer;
-}
-
-.form-input::placeholder {
-  color: var(--placeholder-color);
-}
-
-.form-input:hover,
-.form-input:focus {
-  border: 1px solid var(--active-accent-color);
-  box-shadow: var(--form-input-shadow);
-}
-
-.form-input:focus + .input-icon,
-.form-input:hover + .input-icon {
-  fill: var(--accent-color);
+  &::placeholder {
+    color: var(--placeholder-color);
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--active-accent-color);
+    box-shadow: var(--form-input-shadow);
+  }
+  &:focus + .input-icon,
+  &:hover + .input-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .input-icon {
@@ -112,10 +109,9 @@
   height: 120px;
   padding: 12px 16px;
   resize: none;
-}
-
-.form-comment::placeholder {
-  color: var(--placeholder-color);
+  &::placeholder {
+    color: var(--placeholder-color);
+  }
 }
 
 .input-text {
@@ -152,18 +148,19 @@
   fill: transparent;
 }
 
-.policy-check:checked + .check-text .check-wrap {
-  border: 2px solid var(--accent-color);
-  background-color: var(--accent-color);
+.policy-check:checked + .check-text {
+  &.check-wrap {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+  }
+  &.policy-icon {
+    fill: var(--light-color);
+  }
 }
 
 .policy-check:hover + .check-text .check-wrap,
 .policy-check:focus + .check-text .check-wrap {
   border: 2px solid var(--accent-color);
-}
-
-.policy-check:checked + .check-text .policy-icon {
-  fill: var(--light-color);
 }
 
 .conditions {

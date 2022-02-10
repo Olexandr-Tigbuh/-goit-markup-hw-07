@@ -14,18 +14,17 @@
   border: none;
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition);
+  &:hover,
+  &:focus,
+  .portfolio-current-button {
+    color: var(--light-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--portfolio-btn-shadow);
+  }
 }
 
 .portfolio-button-item:not(:last-of-type) {
   margin-right: 8px;
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus,
-.portfolio-current-button {
-  color: var(--light-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--portfolio-btn-shadow);
 }
 
 .portfolio-button-list {

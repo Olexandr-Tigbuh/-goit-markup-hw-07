@@ -48,9 +48,8 @@
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--transition);
-}
-
-.projects-link:hover,
-.projects-link:focus {
-  box-shadow: var(--projects-link-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: var(--projects-link-shadow);
+  }
 }

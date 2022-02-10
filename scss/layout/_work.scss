@@ -1,12 +1,12 @@
-.work-item {
+.work-list__item {
   width: calc(100% / 3 - 30px);
 }
 
-.work-img-cont {
+.work-cont__img {
   position: relative;
 }
 
-.work-img-text {
+.work-cont__img-text {
   position: absolute;
   font-weight: 700;
   line-height: 1.14;

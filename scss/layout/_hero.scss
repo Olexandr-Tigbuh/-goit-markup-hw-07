@@ -1,9 +1,9 @@
-.hero-section {
+.hero__section {
   display: block;
   background-color: var(--beckground-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  box-shadow: 0px 4px 4px var(--hiro-box-shadow);
+  box-shadow: 0px 4px 4px var(--hero-box-shadow);
 }
 
 .overlay {
@@ -17,7 +17,7 @@
   background-size: cover;
 }
 
-.hiro-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -31,7 +31,7 @@
   margin-bottom: 30px;
 }
 
-.hiro-btn {
+.hero__btn {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -47,11 +47,10 @@
   margin-right: auto;
   padding: 10px 32px;
   border: none;
-  box-shadow: 0px 4px 4px var(--hiro-btn-box-shadow);
+  box-shadow: 0px 4px 4px var(--hero-btn-box-shadow);
   transition: background-color var(--transition);
-}
-
-.hiro-btn:active,
-.hiro-btn:hover {
-  background-color: var(--active-accent-color);
+  &:active,
+  &:hover {
+    background-color: var(--active-accent-color);
+  }
 }

@@ -1,4 +1,4 @@
-.regular-customer-link {
+.regular-customer__link {
   background-color: var(--light-color);
   display: flex;
   justify-content: center;
@@ -9,20 +9,19 @@
   padding: 16px 32px;
   transition: color var(--transition);
   outline: none;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.regular-customer-icon {
+.regular-customer__icon {
   fill: currentColor;
-}
-.regular-customer-icon:hover,
-.regular-customer-icon:focus {
-  color: var(--accent-color);
-}
-
-.regular-customer-link:hover,
-.regular-customer-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.regular-customer-item {
+.regular-customer__item {
   width: calc(100% / 6 - 30px);
 }
